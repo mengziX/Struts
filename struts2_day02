@@ -1,0 +1,42 @@
+ 
+  总结         OGNL -----OGNL:对象图导航语言,是一种功能强大的表达式语言
+                         优点： 调用对象的方法
+                                调用对象的静态方法
+                                表达式串联
+                                访问ActionContext的数据
+                                操作集合
+                         OGNL的入门
+                                Java环境
+                                Struts2环境
+              值栈ValueStack：
+                         什么是值栈：值栈是一个窗口，实现类OgnlValueStack，值栈贯穿了Action的生命周期。
+                         相当于的数据中转站
+                         值栈的内部结构
+                                 root：compoudDoot,就是一个Arraylist
+                                 context：OgnlContext，就是一个Map
+                          值栈和ActionContext关系
+                                 在Action Context中获得值栈的引用
+                          获得值栈
+                                 通过ActionContext获得
+                                 通过request对象获得
+                          操作值栈
+                                 利用Action本身在值栈中的特性，给Action定义属性和属性get方法
+                                 调用值栈本身的方法
+                                       set（String str，Object obj）
+                                       push（Object ob ）
+                          获取值栈数据
+                                 在页面中使用OGNL获得
+                                       获得对象数据
+                                       获得集合数据
+                          EL访问值栈的数据
+                                 底层增强request getAttrubute方法
+              OGNL特殊字符
+                          #号    获取context数据
+                                 构建ma集合
+                                 
+                          %号    强制解析ONGL表达式
+                                 强制不解析OGNL表达式
+                          $号     
+                             
+               
+                             
